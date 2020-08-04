@@ -1,0 +1,20 @@
+title: DSG Open Source
+email: hello@dangerscience.com
+description: We do science to computers. Dangerously.
+baseurl: ""
+url: ""
+twitter_username: danger_science
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+exclude:
+  - config
+  - Dangerfile
+  - Gemfile
+  - Gemfile.lock
+  - lib
+  - REVISION
+  - README.md

@@ -1,0 +1,122 @@
+---
+---
+
+$brand-colour: #a00;
+$brand-font: "Fira Code","Menlo","Courier New",Courier,monospace;
+
+html, body {
+  background-color: #f6f6f6
+}
+
+main > section {
+  padding: 40px;
+  &:first-child { background-color: #fff; }
+}
+
+header, nav {
+  text-align: center;
+  background: $brand-colour;
+  padding: 10px 0;
+  a, a:hover, a:active {
+    color: #fff;
+    text-decoration: none;
+  }
+  h1 {
+    @media (max-width: 380px) {
+      & { font-size: 2rem !important; }
+    }
+    @media (min-width: 381px) and (max-width: 520px) {
+      & { font-size: 2.5rem !important; }
+    }
+  }
+}
+nav {
+  background: darken($brand-colour, 10%);
+  font-family: $brand-font;
+  letter-spacing: -0.025em;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    display: block;
+    margin: 0 15px;
+    &, &:hover { color: #fff; }
+    &:active { color: #ccc; }
+  }
+}
+
+article {
+  padding: 40px 0;
+  &:not(:last-child) { border-bottom: 1px solid #ddd; }
+  h2 { margin-bottom: 0; }
+  small {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+article time,
+section small#metadata {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: .5rem;
+}
+span.post-tag {
+  padding: .1rem .3rem;
+  border-radius: .2rem;
+  background: #666;
+  color: #fff;
+  margin-left: .1rem;
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+h1, h2, h3, span.logo {
+  font-family: $brand-font;
+  font-weight: 400 !important;
+  letter-spacing: -0.05em;
+  sup {
+    font-size: 0.3em;
+    top: -1.5em;
+    font-weight: 100;
+    left: -0.25em;
+  }
+  footer & {
+    font-weight: 500 !important;
+    sup {
+      font-size: 0.6em;
+      top: -0.5em;
+    }
+  }
+}
+
+.code { font-family: $brand-font; }
+
+.leadinModal {
+  h4, button {
+    font-family: $brand-font;
+    letter-spacing: -0.025em;
+  }
+  button {
+    font-weight: 500 !important;
+    font-size: 1.2em !important;
+  }
+}
+
+footer {
+  font-size: 0.8em;
+  color: #999;
+  text-align: center;
+  margin: 40px 0;
+  a {
+    color: #999;
+    text-decoration: underline;
+  }
+  @media (min-width: 768px) {
+    & { background: url('/assets/dosomegood.svg') no-repeat right 15px center; }
+    &:hover { background-image: url('/assets/dosomegood_hover.svg'); }
+  }
+}

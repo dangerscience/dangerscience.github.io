@@ -1,0 +1,13 @@
+---
+layout: page
+title: Open source blog
+---
+
+{% for post in site.posts %}
+	<article>
+		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<time>{{ post.date | date_to_long_string: "ordinal", "UK" }}</time>
+		{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+		<small><a href="{{ post.url }}">Read more &rarr;</a></small>
+	</article>
+{% endfor %}

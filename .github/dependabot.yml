@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: "bundler"
+  directory: "/"
+  schedule:
+    interval: "daily"
+  commit-message:
+    prefix: Bundle
+- package-ecosystem: "npm"
+  directory: "/"
+  schedule:
+    interval: "daily"
+  commit-message:
+    prefix: Yarn
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "daily"
+  commit-message:
+    prefix: CI
+  ignore:
+  - dependency-name: "actions/setup-node" # v2 still in beta

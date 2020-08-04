@@ -1,0 +1,11 @@
+---
+layout: page
+---
+<small id="metadata">
+	Posted on <time>{{ page.date | date_to_long_string: "ordinal", "UK" }}</time> &middot;
+	Tagged
+	{% for tag in page.tags %}
+		<span class="post-tag">{{ tag }}</span>
+	{% endfor %}
+</small>
+{{ content }}
