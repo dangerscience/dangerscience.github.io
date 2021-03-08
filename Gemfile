@@ -23,3 +23,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'danger'
 gem 'danger-commit_lint'
 gem 'danger-prose'
+# WEBrick
+gem 'webrick'
