@@ -9,6 +9,6 @@ Our favourite is, of course, [Ruby on Rails](https://rubyonrails.org/) — but 
 ## Stuff we like
 
 [![uber/pam-ussh - GitHub](https://gh-card.dev/repos/uber/pam-ussh.svg?fullname=)](https://github.com/uber/pam-ussh)
-[![skylarmacdonald/bork - GitHub](https://gh-card.dev/repos/skylarmacdonald/bork.svg?fullname=)](https://github.com/skylarmacdonald/bork)
+[![borksh/bork - GitHub](https://gh-card.dev/repos/borksh/bork.svg?fullname=)](https://github.com/borksh/bork)
 [![hashicorp/vault - GitHub](https://gh-card.dev/repos/hashicorp/vault.svg?fullname=)](https://github.com/hashicorp/vault)
 [![capistrano/capistrano - GitHub](https://gh-card.dev/repos/capistrano/capistrano.svg?fullname=)](https://github.com/capistrano/capistrano)
