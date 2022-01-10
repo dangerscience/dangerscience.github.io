@@ -68,7 +68,7 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
-    jekyll (4.2.0)
+    jekyll (4.2.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -128,12 +128,13 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   danger
   danger-commit_lint
   danger-prose
-  jekyll (= 4.2.0)
+  jekyll (= 4.2.1)
   jekyll-feed (~> 0.15)
   tzinfo-data
   webrick
